@@ -10,6 +10,3 @@ end
 execute 'install' do
   command 'curl https://s3.amazonaws.com/aws-cloudwatch/downloads/latest/awslogs-agent-setup.py -O'
 end
-execute 'on' do
-  command '/etc/init.d/awslogs start'
-end
