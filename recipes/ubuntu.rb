@@ -11,7 +11,7 @@ execute 'install' do
   command 'curl https://s3.amazonaws.com/aws-cloudwatch/downloads/latest/awslogs-agent-setup.py -O'
 end
 execute 'start' do
-  command 'service awslogs start'
+  command 'sudo service awslogs start'
 end
 execute 'on' do
   command 'update-rc.d awslogs start 20 2 3 4 5 . stop 20 0 1 6 .'
